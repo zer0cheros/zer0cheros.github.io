@@ -48,8 +48,7 @@
 
 ### <span style="color: #72D473;">Part 5</span> https://www.markdowntutorial.com/lesson/5/
 -------------------------------------------------------------------------------------------------
-
-1.
+1. 
 I read this interesting quote the other day:
 
 >"Her eyes had called him and his soul had leaped at the call. To live, to err, to fall, to triumph, to recreate life out of life!"
@@ -64,23 +63,27 @@ I read this interesting quote the other day:
 
 ### <span style="color: #72D473;">Part 6</span> https://www.markdowntutorial.com/lesson/6/
 
-1. 
+1
+
 * Flour
 * Cheese
 * Tomatoes
 
-2. 
+2  
+ 
+
 1. Cut the cheese
 2. Slice the tomatoes
-3. Rub the tomatoes in flour
+3. Rub the tomatoes in flour  
 
-3. 
+3 
 
 * Azalea (_Ericaceae Rhododendron_)
 * Chrysanthemum (_Anthemideae Chrysanthemum_)
 * Dahlia (_Coreopsideae Dahlia_)
 
-4. 
+4
+
 * Calculus
     * A professor
     * Has no hair
@@ -90,7 +93,7 @@ I read this interesting quote the other day:
     * Has white hair
     * Is possibly mentally unwell
 
-5. 
+5
 > 1. Cut the cheese
 >   * Make sure that the cheese is cut into little triangles.
 >
@@ -100,14 +103,15 @@ I read this interesting quote the other day:
 
 ### <span style="color: #72D473;">Part 7</span> https://www.markdowntutorial.com/lesson/7/
 
-1. 
+1  
+
 We pictured the meek mild creatures where  
 They dwelt in their strawy pen,  
 Nor did it occur to one of us there  
 To doubt they were kneeling then.
 
 
-1.
+2
 
 1. Crack three eggs over a bowl.
 
