@@ -34,11 +34,11 @@
 
 ### <span style="color: #72D473;">Part 4</span> https://www.markdowntutorial.com/lesson/4/
 -------------------------------------------------------------------------------------------------
-1. 
+1 
 
 ![A pretty tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
 
-2. 
+2 
 
 ![Black cat][Black]
 ![Orange cat][Orange]
