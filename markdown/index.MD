@@ -1,16 +1,16 @@
 # <span style="color: #72D473;">Christian Wiss Web Exercise</span>
 
-## <span style="color: #F2E255;">Answers</span>
+<br>
 
-### <span style="color: #72D473;">Part 1</span>
-
+### <span style="color: #72D473;">Part 1</span> https://www.markdowntutorial.com/lesson/1/
+-------------------------------------------------------------------------------------------------
 1. Writing in Markdown is _not_ that hard!
 2. I **will** complete these lessons!
 3. "_Of course_," she whispered. Then, she shouted: "All I need is **a little moxie**!"
 4. If you're thinking to yourself, **_This is unbelievable_**, you'd probably be right.
 
-### <span style="color: #72D473;">Part 2</span>
-
+### <span style="color: #72D473;">Part 2</span> https://www.markdowntutorial.com/lesson/2/
+-------------------------------------------------------------------------------------------------
 1. # Header one
    ## Header two
    ### Header three
@@ -18,10 +18,11 @@
    ##### Header five
    ###### Header six
 
+
 2. #### Colombian Symbolism in _One Hundred Years of Solitude_
 
-### <span style="color: #72D473;">Part 3</span>
-
+### <span style="color: #72D473;">Part 3</span> https://www.markdowntutorial.com/lesson/3/
+-------------------------------------------------------------------------------------------------
 1. [Search for it.](http://www.google.com)
 2. You're [**really, really**](http://www.dailykitten.com) going to want to see this.
 3. Do you want to [see something fun][a fun place]?, 
@@ -31,8 +32,8 @@
 [a fun place]: http://www.zombo.com
 [another fun place]: http://www.stumbleupon.com
 
-### <span style="color: #72D473;">Part 4</span>
-
+### <span style="color: #72D473;">Part 4</span> https://www.markdowntutorial.com/lesson/4/
+-------------------------------------------------------------------------------------------------
 1. 
 
 ![A pretty tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
@@ -45,7 +46,9 @@
 [Black]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg
 [Orange]: http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png
 
-### <span style="color: #72D473;">Part 5</span>
+### <span style="color: #72D473;">Part 5</span> https://www.markdowntutorial.com/lesson/5/
+-------------------------------------------------------------------------------------------------
+
 1.
 I read this interesting quote the other day:
 
@@ -59,7 +62,7 @@ I read this interesting quote the other day:
 3. 
 >He left her quickly, fearing that her intimacy might turn to jibing and wishing to be out of the way before she offered her ware to another, a tourist from England or a student of Trinity. Grafton Street, along which he walked, prolonged that moment of discouraged poverty. In the roadway at the head of the street a slab was set to the memory of Wolfe Tone and he remembered having been present with his father at its laying. He remembered with bitterness that scene of tawdry tribute. There were four French delegates in a brake and one, a plump smiling young man, held, wedged on a stick, a card on which were printed the words: _VIVE L'IRLANDE_!
 
-### <span style="color: #72D473;">Part 6</span>
+### <span style="color: #72D473;">Part 6</span> https://www.markdowntutorial.com/lesson/6/
 
 1. 
 * Flour
@@ -95,7 +98,7 @@ I read this interesting quote the other day:
 >   * Be careful when holding the knife.
 >   * For more help on tomato slicing, see Thomas Jefferson's seminal essay _Tom Ate Those_.
 
-### <span style="color: #72D473;">Part 7</span>
+### <span style="color: #72D473;">Part 7</span> https://www.markdowntutorial.com/lesson/7/
 
 1. 
 We pictured the meek mild creatures where  
