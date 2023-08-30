@@ -2,55 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Password Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <section class="showcase">
-        <header>
-            <h2 class="logo">Create, Host and Enjoy</i></h2>
-            <div class="nav"><i onclick="menu()" class="fas fa-bars"></i></div>
-        </header>
-        <video src="video2.mp4" muted loop autoplay></video>
-        <div class="overlay"></div>
-        <div class="text">
-            <h2>Programming</h2>
-            <h3>Playing God</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos architecto quibusdam
-                 recusandae sapiente numquam vitae veritatis placeat beatae. Sit! Lorem ipsum dolor, sit amet 
-                 consectetur adipisicing elit. Consequuntur, odio?</p>
-        </div>
-        <ul class="social">
-            <li class="fab fa-facebook"> Facebook</li>
-            <li class="fab fa-instagram"> Instagram</li>
-            <li class="fab fa-twitter"> Twitter</li>
-            <li class="fab fa-github"> Github</li>
-        </ul>
-        <section class="history">
-            <div class="container">
-                <h2>History</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laudantium, magnam labore officiis expedita ipsa quidem neque pariatur aut! Aperiam eius a consequuntur animi asperiores omnis consectetur. Facere provident doloribus harum aliquid quae praesentium ipsam eos tempora cumque possimus distinctio cum dolor, temporibus, soluta voluptatem, tenetur impedit excepturi voluptas obcaecati quisquam id dignissimos tempore! Reprehenderit quod pariatur, cupiditate beatae provident molestiae accusantium exercitationem cum vitae obcaecati explicabo itaque molestias ab? Earum rem totam repellat, impedit quia recusandae in deleniti, voluptas cum error eveniet dolores, quae eaque. Voluptates cum alias placeat autem aut repellendus nemo, quasi culpa, asperiores fugiat aliquam molestias.</p>
+<body class="bg-black text-green-600">
+    <div class="w-full h-screen flex flex-col bg-container">
+        <div class="flex justify-center items-center h-[10%]">
+            <div class="flex gap-3 mt-4 mb-1">
+              <a href="https://programutvecklare.com/" target="_blank">
+                <img src="public/logo.webp" alt="Logo" class="w-9 pt-3">
+              </a>
+              <div class="flex flex-col">
+                <a href="https://optimaedu.fi/sv/" target="_blank">
+                  <img src="public/optima.webp" alt="Logo" class="w-20">
+                </a>
+                <a href="https://programutvecklare.com/" target="_blank">
+                  <p class="text-sm">Programutvecklare</p>
+                </a>
+              </div>
             </div>
-        </section>
-    </section>
-    <div class="menu">
-        <i class="fas fa-database fa-5x logo2"></i>
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Project</li>
-        </ul>
-        <i class="fas fa-database fa-5x logo2"></i>
-        <h2 class="login"><a href="#">Login</a></h2>
+        </div>
+        <div class="flex flex-col items-center w-full justify-center h-full">  
+            <h1 class="text-4xl font-bold mb-4">Password Checker</h1>
+            <p class="typewriter text-lg">Testa ditt lösenord</p>
+            <div class="mt-8">
+                <input id="pass" type="password" placeholder="Skriv ditt lösenord..." class="px-4 py-2 border-2 border-white text-green-500 rounded-lg">
+                <button id="check" class="px-4 py-2 bg-green-500 text-white max-sm:p-5 rounded-lg ml-4">Kontrollera</button>
+            </div>
+        </div>
+        <p class="text-lg absolute bottom-4 left-4">Programutvecklare.com sparar inte eller lagrar ditt lösenord. Skydda alltid dina lösenord, se till att ingen kan se när du skriver in ditt lösenord.</p>
+        <!--MODAL SECTION-->
+        <div id="modal" class="modal hidden w-full h-full inset-0 flex items-center justify-center z-50">
+            <div class="modal-content bg-white min-w-[85%] flex flex-col justify-center items-center h-80 m-auto p-4 rounded shadow-lg">
+                <h2 class="text-6xl py-3 font-bold mb-4 text-green-600">Resultat</h2>
+                <p class=" text-lg text-green-500">Detta är idikation på hur säkert ditt lösenord är, försök använda lösenord som är högre än 60 procent</p>
+                <div class="progress-bar h-full w-full bg-gray-300 mt-4">
+                    <div id="progress-bar-fill" class="progress-bar-fill h-full bg-green-500" style="width: 0;"></div>
+                </div>
+                <p id="procent" class="text-green-500 text-lg p-5"></p>
+                <button onclick="closeModal()" class="px-4 py-2 bg-green-500 text-white rounded-lg ml-4">Stäng</button>
+                
+            </div>
+        </div>
     </div>
-    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
+    <script>
+        // Initialize typewriter effect
+        const typewriter = new Typewriter('.typewriter', {
+            delay: 75,
+            loop: true
+        });
+        typewriter.typeString('Testa ditt lösenord')
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString('Lösenord måste skyddas bra')
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString('Ditt lösenord lagras inte, eller sparas någonstans')
+            .pauseFor(1000)
+            .deleteAll()
+            .start();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
