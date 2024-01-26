@@ -55,11 +55,12 @@
     width: 100%;
 }
 .arrow {
-    width: 350px;
-    height: 140px;
+    width: 450px;
+    height: 240px;
     margin-right: 40px;
     background-image: url('./img/arrow.png');
     background-size: cover;
+    filter:saturate(0.4);
 }
 .left, .right {
     position: relative;
@@ -74,8 +75,9 @@
     
 }
 .video {
+    margin-top: 25px;
     width: 95%;
-    height: 50%;
+    height: 55%;
     object-fit: cover;
     box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
