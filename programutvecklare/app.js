@@ -31,11 +31,11 @@
       var Y = canvas.height = window.innerHeight;
       var mouseX = null;
       var mouseY = null;
-      var shapeNum = 300;
+      var shapeNum = 150;
       var shapes = [];
       var style = {
-        black: 'black',
-        white: 'white',
+        black: 'darkseagreen',
+        white: 'darkseagreen',
         lineWidth: 4,
       };
   
@@ -64,13 +64,13 @@
       Shape.prototype.init = function(x, y) {
         this.x = x;
         this.y = y;
-        this.r = rand(10, 25);
+        this.r = rand(5, 30);
         this.ga = Math.random() * Math.random() * Math.random() * Math.random();
         this.v = {
           x: Math.random(),
           y: -1
         };
-        this.l = rand(0, 20);
+        this.l = rand(0, 25);
         this.sl = this.l;
       };
   
@@ -94,7 +94,7 @@
         ctx.globalCompositeOperation = 'lighter';
         ctx.globalAlpha = this.ga;
         //ctx.fillStyle = 'rgb(123, 252, 100)';
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = 'darkseagreen';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
         ctx.fill();
