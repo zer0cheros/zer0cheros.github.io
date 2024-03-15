@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projekt 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="cont">
+        <div class="hero">
+            <h1 class="text-7xl font-bold text-slate-50">För Spelare, Av Spelare</h1>
+            <h3 class="text-4xl p-10 font-bold text-slate-50">Där varje klick är en ny värld</h3>
+            <p class="text-xl p-10 font-bold text-slate-50">Här kan du skapa inlägg anonymt om dina favorit H4cks för spel</p>
+            <button id="show-modal" class="w-fit ml-10 hover:bg-slate-50 hover:text-black transition-all hover:border-black rounded-md bg-transparent border-b-4 border-slate-50 p-2 text-4xl text-slate-50">Lägg till H4cks!</button>
+        </div>
+        <!--Add Modal-->
+        <div id="modal" hidden class="fixed inset-0 z-10 w-screen overflow-y-auto">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+          <div class="flex min-h-full items-end w-full justify-center p-4 text-center sm:items-center sm:p-0">
+           <form id="form" class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 min-w-[40%] text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+            <div class="form-control">
+                <label for="title">Titel</label>
+                <input type="text" id="title" placeholder="Skriv titel här">
+            </div>
+            <div class="form-control">
+                <label for="author">Anvsändare</label>
+                <input type="text" id="author">
+            </div>
+            <div class="form-control">
+                <label for="img">Länka en bild</label>
+                <input type="text" id="img" placeholder="lägg till bild-länk">
+            </div>
+            <div class="form-control">
+                <label for="content">Innehåll</label>
+                <textarea id="content" rows="5" placeholder="Skriv innehåll här"></textarea>
+            </div>
+            <button class="button p-5 shadow-xl rounded-full m-2 bg-gray-800 text-white">Lägg till/Uppdatera</button>
+            <button class="button  p-5 shadow-xl rounded-full m-2 bg-gray-200" class="button" id="close">Stäng</button> 
+        </div>
+    </div>
+        
+       
+    <div class="hacks w-full">
+        <h2 class="text-4xl  mb-4 font-bold text-slate-50">H4cks</h2>
+        <div id="hacks" class="flex flex-auto flex-wrap w-full gap-5">
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
