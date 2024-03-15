@@ -2,9 +2,10 @@ const showModal = document.getElementById('show-modal');
 const blogForm = document.getElementById('form');
 let hacks =  []
 let currentAction = 'add';
-getHacks();
-addToStore(); 
-getHacks();
+(async function initialize() {
+    await addToStore(); 
+    getHacks();
+})();
 
 showModal.addEventListener('click', ()=>{
     document.getElementById('modal').style.display = 'flex';
@@ -84,10 +85,11 @@ async function readFromJson(){
     return data;
 }
 
-async function addToStore(){
-    if(localStorage.getItem('hacks') == null){
-    const data = await readFromJson();
-    localStorage.setItem('hacks', JSON.stringify(data));
+async function addToStore() {
+    if (!localStorage.getItem('hacks')) {
+        const data = await readFromJson();
+        localStorage.setItem('hacks', JSON.stringify(data));
+        hacks = data;
     } else {
         hacks = JSON.parse(localStorage.getItem('hacks'));
     }
