@@ -4,6 +4,7 @@ let hacks =  []
 let currentAction = 'add';
 getHacks();
 addToStore(); 
+getHacks();
 
 showModal.addEventListener('click', ()=>{
     document.getElementById('modal').style.display = 'flex';
