@@ -2,8 +2,8 @@ const showModal = document.getElementById('show-modal');
 const blogForm = document.getElementById('form');
 let hacks =  []
 let currentAction = 'add';
-addToStore(); 
 getHacks();
+addToStore(); 
 
 showModal.addEventListener('click', ()=>{
     document.getElementById('modal').style.display = 'flex';
