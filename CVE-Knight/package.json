@@ -1,0 +1,12 @@
+{
+  "name": "CVE-Knight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["cve", "nodejs", "server"],
+  "author": "zer0cheros",
+  "license": "ISC"
+}

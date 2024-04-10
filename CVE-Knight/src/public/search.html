@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>CVE Knight</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <div class="l"></div>
+                <h1 class="t logo">CVE-Knight</h1>
+                <div class="l"></div>
+            </div>
+            <div class="navbar-links">
+                <a href="/" class="t link">Home</a>
+                <a href="/about" class="t link">About this site</a>
+                <a href="/search" class="t link">Search CVE</a>
+            </div>
+        </nav>
+        <form id="search-form">
+        <div class="search-container">
+            <input name="query" type="text" id="search"  placeholder="Search for CVE:s">
+            <button class="t" id="search-button">Search</button>
+        </div>
+        </form>
+        <div id="data" class="data"></div>
+    </div >
+    <script src="/script.js"></script>
+</body>
+</html>
